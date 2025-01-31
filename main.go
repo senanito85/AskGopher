@@ -15,7 +15,7 @@ import (
 
 func GetResponse(client *genai.Client, ctx context.Context, question string) {
 	// Initialize Gemini Pro model
-	model := client.GenerativeModel("gemini-pro")
+	model := client.GenerativeModel("gemini-1.5-flash")
 
 	// Configure the model
 	model.SetTemperature(0.7)
